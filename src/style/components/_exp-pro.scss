@@ -13,7 +13,6 @@
 		margin: 10px;
 
 		&:hover {
-			transform: translateY(-0.5%);
 			box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
 		}
 
@@ -53,6 +52,11 @@
 		.link {
 			color: rgb(47, 47, 99);
 			text-decoration: none;
+		}
+
+		.link:hover {
+			color: rgb(32, 32, 70);
+			font-weight: bold;
 		}
 	}
 }

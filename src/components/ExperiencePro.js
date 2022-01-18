@@ -26,13 +26,13 @@ const ExperiencePro = ({
 			<p className="mission">{mission3}</p>
 			<p className="mission">{mission4}</p>
 			<p className="mission">⚙️ {environnement}</p>
-			<p className="link">
-				<a href={link} target="_blank">
+			<p className="link-p">
+				<a href={link} target="_blank" className="link">
 					{link}
 				</a>
 			</p>
-			<p className="link">
-				<a href={link2} target="_blank">
+			<p className="link-p">
+				<a href={link2} target="_blank" className="link">
 					{link2}
 				</a>
 			</p>

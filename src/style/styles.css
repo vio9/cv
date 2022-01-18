@@ -95,4 +95,7 @@ h1 {
 .wrapper .exp-card .link {
   color: #2f2f63;
   text-decoration: none;
+}
+.wrapper .exp-card .link::after {
+  background-image: url("../../datas/link.png");
 }/*# sourceMappingURL=styles.css.map */
