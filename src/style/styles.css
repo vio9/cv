@@ -37,19 +37,62 @@ h1 {
 }
 
 .presentation {
-  padding-top: 40px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: 400px;
+  width: 800px;
   text-align: center;
+  font-size: 18px;
 }
 
-.exp-card {
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.wrapper .exp-card {
   display: flex;
   flex-direction: column;
   width: 30rem;
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+.wrapper .exp-card:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+}
+.wrapper .exp-card .entreprise {
+  font-size: 17px;
+  font-weight: 800;
+  padding: 8px;
+  background-color: #a8bbbf;
+  color: #fdfdf4;
+  border-radius: 7px;
+}
+.wrapper .exp-card .poste {
+  padding: 4px;
+  font-weight: bold;
+  color: #3e3e3f;
+}
+.wrapper .exp-card .date {
+  padding: 4px;
+}
+.wrapper .exp-card .image-exp-pro {
+  padding: 10px;
+  border-radius: 2px;
+}
+.wrapper .exp-card .mission-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.wrapper .exp-card .mission {
+  padding: 4px;
+}
+.wrapper .exp-card .link {
+  color: #2f2f63;
+  text-decoration: none;
 }/*# sourceMappingURL=styles.css.map */

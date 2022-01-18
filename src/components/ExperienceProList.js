@@ -8,7 +8,7 @@ const ExperienceProList = () => {
 	const getExperience = async () => {
 		try {
 			const result = await axios.get(
-				"https://raw.githubusercontent.com/vio9/datas/main/db.json"
+				"https://raw.githubusercontent.com/vio9/datas/main/cv.json"
 			);
 			setExperiencePro(result.data);
 			console.log(result.data);
@@ -22,7 +22,7 @@ const ExperienceProList = () => {
 	}, []);
 
 	return (
-		<div>
+		<div className="wrapper">
 			{experiencePro.map((item) => (
 				<ExperiencePro {...item} />
 			))}

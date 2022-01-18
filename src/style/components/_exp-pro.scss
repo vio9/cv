@@ -1,8 +1,58 @@
-.exp-card {
+.wrapper {
 	display: flex;
-	flex-direction: column;
-	width: 30rem;
-	padding: 40px;
-	border-radius: 20px;
-	box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	.exp-card {
+		display: flex;
+		flex-direction: column;
+		width: 30rem;
+		padding: 40px;
+		border-radius: 20px;
+		box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+		margin: 10px;
+
+		&:hover {
+			transform: translateY(-0.5%);
+			box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+		}
+
+		.entreprise {
+			font-size: 17px;
+			font-weight: 800;
+			padding: 8px;
+			background-color: #a8bbbf;
+			color: rgb(253, 253, 244);
+			border-radius: 7px;
+		}
+
+		.poste {
+			padding: 4px;
+			font-weight: bold;
+			color: rgb(62, 62, 63);
+		}
+
+		.date {
+			padding: 4px;
+		}
+
+		.image-exp-pro {
+			padding: 10px;
+			border-radius: 2px;
+		}
+
+		.mission-title {
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		.mission {
+			padding: 4px;
+		}
+
+		.link {
+			color: rgb(47, 47, 99);
+			text-decoration: none;
+		}
+	}
 }
