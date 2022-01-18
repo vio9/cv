@@ -1,0 +1,20 @@
+[
+	{
+		"entreprise": "FLOAX",
+		"date": "août / décembre 2021",
+		"mission1": "Application de vote CFDT Réunion : création d'application de vote en ligne en React.JS / Node.JS / SCSS /BDD",
+		"mission2": "https://wowcreative.re : création du site : HTML / SCSS / PHP + Wordpress",
+		"mission3": "Laurent Perrin Architecture : création de contenus (HTML SCSS PHP Wordpress ) (work in progress )",
+		"mission4": "Floax.fr : création et mise à jour du site : AngularJS / SCSS",
+		"environnement": "GIT / GitLab / Visual Studio Code / Airtable / Office 365 / Teams / WorkAdventure"
+	},
+	{
+		"entreprise": "WILD CODE SCHOOL",
+		"date": "mar / juillet 2021",
+		"mission1": "Projet 3 : Application calculateur d'impact environnemental pour la Région Sud : React.js, MySQL, Node.js, Styled Component : 2 mois",
+		"mission2": "Hackaton : Mascarpade, application visant à proposer des activités pour lutter contre la solitude pour les habitants de Mars > Projet gagnant  : React.js, MySQL, Node.js (30 heures) https://marscapade-app.netlify.app",
+		"mission3": "Laurent Perrin Architecture : création de contenus (HTML SCSS PHP Wordpress ) (work in progress )",
+		"mission4": "Projet 2: Mood_Mixtape - Réalisation d'une application musicale utilisant l'API publique Deezer : react.js, HTML, CSS (5 semaines) : https://moodmixtape.netlify.app/",
+		"environnement": "GIT / Github / Visual Studio Code / Discord / Slack / Trello / JIRA / Figmax"
+	}
+]

@@ -1,6 +1,8 @@
 import React from "react";
 import Navigation from "./Navigation";
 import "../style/styles.scss";
+import Presentation from "./Presentation";
+import ExperienceProList from "./ExperienceProList";
 const Home = () => {
 	return (
 		<>
@@ -10,6 +12,8 @@ const Home = () => {
 			</div>
 
 			<Navigation />
+			<Presentation />
+			<ExperienceProList />
 		</>
 	);
 };

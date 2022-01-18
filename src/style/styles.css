@@ -29,8 +29,27 @@ h1 {
   margin: 0 auto;
   width: 400px;
   text-align: center;
+  justify-content: center;
 }
 .navbar .nav-link {
   color: #2c2b2c;
   padding: 10px;
+}
+
+.presentation {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 400px;
+  text-align: center;
+}
+
+.exp-card {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
 }/*# sourceMappingURL=styles.css.map */
