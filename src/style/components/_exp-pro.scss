@@ -3,6 +3,7 @@
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
+
 	.exp-card {
 		display: flex;
 		flex-direction: column;
@@ -38,6 +39,9 @@
 		.image-exp-pro {
 			padding: 10px;
 			border-radius: 2px;
+			max-width: 300px;
+			justify-content: center;
+			margin-left: 34px;
 		}
 
 		.mission-title {
