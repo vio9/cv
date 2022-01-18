@@ -8,18 +8,29 @@
 body {
   margin: 1rem auto;
   font-family: "Roboto", Arial, sans-serif;
-  color: red;
+  color: #363636;
 }
 
 h1 {
-  color: blue;
+  color: #252525;
 }
 
-.test {
-  color: grey;
-  background-color: hotpink;
+.title {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 400px;
+  text-align: center;
 }
 
-.nav-link {
-  color: hotpink;
+.navbar {
+  display: flex;
+  flex-direction: flex;
+  margin: 0 auto;
+  width: 400px;
+  text-align: center;
+}
+.navbar .nav-link {
+  color: #2c2b2c;
+  padding: 10px;
 }/*# sourceMappingURL=styles.css.map */

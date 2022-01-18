@@ -4,11 +4,11 @@ import "../style/styles.scss";
 const Home = () => {
 	return (
 		<>
-			<div>
-				<h1>Bonjour depuis la home</h1>
-				<p className="test">test</p>
+			<div className="title">
+				<h1>Violaine Ernotte</h1>
+				<h2>Développeur Web Front</h2>
 			</div>
-			;
+
 			<Navigation />
 		</>
 	);
