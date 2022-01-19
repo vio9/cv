@@ -11,7 +11,6 @@ const ExperienceProList = () => {
 				"https://raw.githubusercontent.com/vio9/datas/main/cv.json"
 			);
 			setExperiencePro(result.data);
-			console.log(result.data);
 		} catch (error) {
 			console.log(error);
 		}
@@ -22,11 +21,14 @@ const ExperienceProList = () => {
 	}, []);
 
 	return (
-		<div className="wrapper">
-			{experiencePro.map((item) => (
-				<ExperiencePro {...item} />
-			))}
-		</div>
+		<>
+			<h2 className="comp-title-pre-wrapper">Expériences Professionnelles</h2>
+			<div className="wrapper">
+				{experiencePro.map((item) => (
+					<ExperiencePro {...item} />
+				))}
+			</div>
+		</>
 	);
 };
 
