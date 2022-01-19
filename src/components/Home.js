@@ -13,8 +13,8 @@ const Home = () => {
 			</div>
 
 			<Navigation />
-			<Competences />
 			<Presentation />
+			<Competences />
 			<ExperienceProList />
 		</>
 	);
