@@ -4,6 +4,7 @@ import "../style/styles.scss";
 import Presentation from "./Presentation";
 import ExperienceProList from "./ExperienceProList";
 import Competences from "./Competences";
+import Formation from "./Formation";
 const Home = () => {
 	return (
 		<>
@@ -16,6 +17,7 @@ const Home = () => {
 			<Presentation />
 			<Competences />
 			<ExperienceProList />
+			<Formation />
 		</>
 	);
 };

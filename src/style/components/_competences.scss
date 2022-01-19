@@ -13,6 +13,22 @@
 	width: 90%;
 	justify-content: center;
 
+	.wrapper-formation {
+		display: flex;
+		flex-direction: column;
+		border-radius: 10px;
+		box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+		background: radial-gradient(#ffffff, #f5f8fa);
+		color: rgb(26, 25, 25);
+		padding: 30px;
+		margin: 30px;
+		width: 90%;
+
+		.formation-p {
+			padding: 4px;
+		}
+	}
+
 	.wrapper-competences {
 		display: flex;
 		flex-direction: column;
