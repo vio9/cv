@@ -3,6 +3,7 @@ import Navigation from "./Navigation";
 import "../style/styles.scss";
 import Presentation from "./Presentation";
 import ExperienceProList from "./ExperienceProList";
+import Competences from "./Competences";
 const Home = () => {
 	return (
 		<>
@@ -12,6 +13,7 @@ const Home = () => {
 			</div>
 
 			<Navigation />
+			<Competences />
 			<Presentation />
 			<ExperienceProList />
 		</>
