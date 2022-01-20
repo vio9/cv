@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../datas/exp-pro-datas.json";
 import ExperiencePro from "./ExperiencePro";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 const ExperienceProList = () => {
 	const [experiencePro, setExperiencePro] = useState([]);
 
@@ -20,14 +22,24 @@ const ExperienceProList = () => {
 		getExperience();
 	}, []);
 
+	const [isShow, setIsShow] = useState(true);
+	const handleClick = () => {
+		setIsShow(!isShow);
+	};
 	return (
 		<>
-			<h2 className="comp-title-pre-wrapper">Expériences Professionnelles</h2>
-			<div className="wrapper">
-				{experiencePro.map((item) => (
-					<ExperiencePro {...item} />
-				))}
-			</div>
+			<h2 className="comp-title-pre-wrapper" onClick={handleClick}>
+				Expériences Professionnelles <FontAwesomeIcon icon={faAngleDown} />
+			</h2>
+			{isShow ? (
+				<div className="wrapper">
+					{experiencePro.map((item) => (
+						<ExperiencePro {...item} />
+					))}
+				</div>
+			) : (
+				<></>
+			)}
 		</>
 	);
 };

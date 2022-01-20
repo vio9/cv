@@ -1,11 +1,14 @@
 .comp-title-pre-wrapper {
-	font-family: "Baloo 2", serif;
 	padding: 20px;
 	font-size: 2.5em;
 	background-color: rgb(241, 240, 255);
 	border-radius: 2px;
+	font-weight: 400;
+	cursor: pointer;
 }
-
+.comp-title-pre-wrapper:hover {
+	font-weight: 500;
+}
 .wrapper-general {
 	display: flex;
 	flex-direction: row;
