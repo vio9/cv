@@ -8,20 +8,33 @@ import {
 	faTerminal,
 	faFileWord,
 	faAngleDown,
+	faAngleUp,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Competences = () => {
 	const [isShow, setIsShow] = useState(true);
+	const [Clicked, setClicked] = useState(false);
 
 	const handleClick = () => {
 		setIsShow(!isShow);
 	};
 
+	const handleClicked = () => {
+		setClicked(!Clicked);
+	};
+
 	return (
 		<>
-			<h2 className="comp-title-pre-wrapper" onClick={handleClick}>
-				Compétences <FontAwesomeIcon icon={faAngleDown} />
-			</h2>
+			<span onClick={handleClicked}>
+				<h2 className="comp-title-pre-wrapper" onClick={handleClick}>
+					Compétences{" "}
+					{Clicked ? (
+						<FontAwesomeIcon icon={faAngleDown} />
+					) : (
+						<FontAwesomeIcon icon={faAngleUp} />
+					)}
+				</h2>
+			</span>
 			{isShow ? (
 				<div className="wrapper-general">
 					<div className="wrapper-competences">

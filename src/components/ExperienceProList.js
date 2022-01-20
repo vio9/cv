@@ -3,9 +3,11 @@ import axios from "axios";
 import "../datas/exp-pro-datas.json";
 import ExperiencePro from "./ExperiencePro";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 const ExperienceProList = () => {
 	const [experiencePro, setExperiencePro] = useState([]);
+	const [Clicked, setClicked] = useState(false);
+	const [isShow, setIsShow] = useState(true);
 
 	const getExperience = async () => {
 		try {
@@ -22,15 +24,26 @@ const ExperienceProList = () => {
 		getExperience();
 	}, []);
 
-	const [isShow, setIsShow] = useState(true);
 	const handleClick = () => {
 		setIsShow(!isShow);
 	};
+
+	const handleClicked = () => {
+		setClicked(!Clicked);
+	};
+
 	return (
 		<>
-			<h2 className="comp-title-pre-wrapper" onClick={handleClick}>
-				Expériences Professionnelles <FontAwesomeIcon icon={faAngleDown} />
-			</h2>
+			<span onClick={handleClicked}>
+				<h2 className="comp-title-pre-wrapper" onClick={handleClick}>
+					Expériences Professionnelles{" "}
+					{Clicked ? (
+						<FontAwesomeIcon icon={faAngleDown} />
+					) : (
+						<FontAwesomeIcon icon={faAngleUp} />
+					)}
+				</h2>
+			</span>
 			{isShow ? (
 				<div className="wrapper">
 					{experiencePro.map((item) => (

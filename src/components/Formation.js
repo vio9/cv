@@ -1,20 +1,32 @@
 import React from "react";
 import "../style/styles.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
 const Formation = () => {
 	const [isShow, setIsShow] = useState(true);
+	const [Clicked, setClicked] = useState(true);
 
 	const handleClick = () => {
 		setIsShow(!isShow);
 	};
+
+	const handleClicked = () => {
+		setClicked(!Clicked);
+	};
 	return (
 		<>
-			<h2 className="comp-title-pre-wrapper" onClick={handleClick}>
-				Formation <FontAwesomeIcon icon={faAngleDown} />
-			</h2>
+			<span onClick={handleClicked}>
+				<h2 className="comp-title-pre-wrapper" onClick={handleClick}>
+					Formation{" "}
+					{Clicked ? (
+						<FontAwesomeIcon icon={faAngleDown} />
+					) : (
+						<FontAwesomeIcon icon={faAngleUp} />
+					)}
+				</h2>
+			</span>
 			{isShow ? (
 				<div className="wrapper-general">
 					<div className="wrapper-formation">
