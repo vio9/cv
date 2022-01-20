@@ -8,7 +8,7 @@ import Formation from "./Formation";
 import Footer from "./Footer";
 const Home = () => {
 	return (
-		<>
+		<div className="wrapper-home">
 			<div className="title">
 				<h1>Violaine Ernotte</h1>
 				<h2>Développeur Web Front</h2>
@@ -20,7 +20,7 @@ const Home = () => {
 			<ExperienceProList />
 			<Formation />
 			<Footer />
-		</>
+		</div>
 	);
 };
 

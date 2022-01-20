@@ -15,12 +15,21 @@ $min-height: 95vh;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	@media only screen and (max-width: 340px) {
+		max-width: 340px;
+	}
 }
 
 body {
 	margin: 1rem auto;
 	font-family: $font-1;
 	color: rgb(54, 54, 54);
+
+	.wrapper-home {
+		@media only screen and (max-width: 340px) {
+			max-width: 320px;
+		}
+	}
 }
 
 .footer {
