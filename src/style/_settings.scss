@@ -18,6 +18,9 @@ $min-height: 95vh;
 	@media only screen and (max-width: 340px) {
 		max-width: 340px;
 	}
+	@media only screen and (max-width: 450px) {
+		max-width: 450px;
+	}
 }
 
 body {
