@@ -5,6 +5,7 @@ import Presentation from "./Presentation";
 import ExperienceProList from "./ExperienceProList";
 import Competences from "./Competences";
 import Formation from "./Formation";
+import Footer from "./Footer";
 const Home = () => {
 	return (
 		<>
@@ -18,6 +19,7 @@ const Home = () => {
 			<Competences />
 			<ExperienceProList />
 			<Formation />
+			<Footer />
 		</>
 	);
 };
