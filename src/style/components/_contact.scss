@@ -1,0 +1,26 @@
+.contact-wrapper {
+	background-color: rgb(229, 230, 247);
+	.contact-form {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		margin: 0 auto;
+		justify-content: center;
+	}
+	label,
+	input,
+	textarea {
+		width: 50%;
+		margin-bottom: 10px;
+		display: flex;
+		padding: 10px 0px 10px 0px;
+		border: none;
+		border-radius: 1px;
+	}
+	.envoyer {
+		width: 100px;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+}
