@@ -5,7 +5,6 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { useState } from "react/cjs/react.development";
 const Contact = () => {
-	const [rempli, setRempli] = useState(false);
 	return (
 		<div className="contact-wrapper">
 			<Header />
@@ -22,7 +21,5 @@ const Contact = () => {
 		</div>
 	);
 };
-//email js !
-// https://www.youtube.com/watch?v=OCHsZuq7WRk
-//https://nodemailer.com/usage/
+
 export default Contact;
