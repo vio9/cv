@@ -5,7 +5,7 @@ import Navigation from "./Navigation";
 const Activites = () => {
 	return (
 		<div>
-			{/* <Header /> */}
+			<Header />
 			<Navigation />
 		</div>
 	);

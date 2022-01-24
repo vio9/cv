@@ -8,7 +8,7 @@ const Contact = () => {
 	const [rempli, setRempli] = useState(false);
 	return (
 		<div className="contact-wrapper">
-			{/* <Header /> */}
+			<Header />
 			<Navigation />
 			<form className="contact-form">
 				<label>Nom :</label>
