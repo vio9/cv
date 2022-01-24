@@ -7,7 +7,7 @@ import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 const ExperienceProList = () => {
 	const [experiencePro, setExperiencePro] = useState([]);
 	const [Clicked, setClicked] = useState(false);
-	const [isShow, setIsShow] = useState(true);
+	const [isShow, setIsShow] = useState(false);
 
 	const getExperience = async () => {
 		try {
@@ -38,9 +38,9 @@ const ExperienceProList = () => {
 				<h2 className="comp-title-pre-wrapper" onClick={handleClick}>
 					Expériences Professionnelles{" "}
 					{Clicked ? (
-						<FontAwesomeIcon icon={faAngleDown} />
-					) : (
 						<FontAwesomeIcon icon={faAngleUp} />
+					) : (
+						<FontAwesomeIcon icon={faAngleDown} />
 					)}
 				</h2>
 			</span>

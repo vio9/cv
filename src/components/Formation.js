@@ -5,8 +5,8 @@ import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
 const Formation = () => {
-	const [isShow, setIsShow] = useState(true);
-	const [Clicked, setClicked] = useState(true);
+	const [isShow, setIsShow] = useState(false);
+	const [Clicked, setClicked] = useState(false);
 
 	const handleClick = () => {
 		setIsShow(!isShow);
@@ -21,9 +21,9 @@ const Formation = () => {
 				<h2 className="comp-title-pre-wrapper" onClick={handleClick}>
 					Formation{" "}
 					{Clicked ? (
-						<FontAwesomeIcon icon={faAngleDown} />
-					) : (
 						<FontAwesomeIcon icon={faAngleUp} />
+					) : (
+						<FontAwesomeIcon icon={faAngleDown} />
 					)}
 				</h2>
 			</span>

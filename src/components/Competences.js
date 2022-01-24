@@ -12,7 +12,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Competences = () => {
-	const [isShow, setIsShow] = useState(true);
+	const [isShow, setIsShow] = useState(false);
 	const [Clicked, setClicked] = useState(false);
 
 	const handleClick = () => {
@@ -29,9 +29,9 @@ const Competences = () => {
 				<h2 className="comp-title-pre-wrapper" onClick={handleClick}>
 					Compétences{" "}
 					{Clicked ? (
-						<FontAwesomeIcon icon={faAngleDown} />
-					) : (
 						<FontAwesomeIcon icon={faAngleUp} />
+					) : (
+						<FontAwesomeIcon icon={faAngleDown} />
 					)}
 				</h2>
 			</span>
