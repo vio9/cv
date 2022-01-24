@@ -22,9 +22,9 @@
 		flex-direction: column;
 		border-radius: 10px;
 		box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-		background: radial-gradient(#e2f2fc, #cfe2ee);
+		background: radial-gradient(#ffffff, #e4f0f8);
 		color: rgb(26, 25, 25);
-		padding: 30px;
+		padding: 18px;
 		margin: 30px;
 		max-width: 80%;
 
@@ -35,6 +35,9 @@
 			font-size: 20px;
 			list-style-type: none;
 			padding: 4px;
+			background-color: rgb(212, 226, 226);
+			padding: 10px;
+			border-radius: 5px;
 		}
 		.sous-wrap-comp {
 			display: flex;
