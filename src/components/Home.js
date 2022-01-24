@@ -7,6 +7,7 @@ import Competences from "./Competences";
 import Formation from "./Formation";
 import Footer from "./Footer";
 import Header from "./Header";
+import GoToTop from "./GoToTop";
 const Home = () => {
 	return (
 		<div className="wrapper-home">
@@ -16,6 +17,7 @@ const Home = () => {
 			<Competences />
 			<ExperienceProList />
 			<Formation />
+			<GoToTop />
 			<Footer />
 		</div>
 	);
