@@ -24,4 +24,5 @@ const Contact = () => {
 };
 //email js !
 // https://www.youtube.com/watch?v=OCHsZuq7WRk
+//https://nodemailer.com/usage/
 export default Contact;
