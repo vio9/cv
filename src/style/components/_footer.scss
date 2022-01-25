@@ -1,14 +1,13 @@
 .footer {
-	height: 150px;
 	display: flex;
 	justify-content: center;
 	width: 100%;
 	background-color: #1a234b;
+	flex-wrap: wrap;
 
 	.footer-link {
 		padding: 10px;
 		text-decoration: none;
-		border-radius: 7px;
 		margin: 0 20px 0px 20px;
 		height: 40px;
 		color: rgb(255, 255, 255);
@@ -18,14 +17,12 @@
 	.footer-link-image {
 		padding: 10px;
 		text-decoration: none;
-		border-radius: 7px;
 		margin: 0 20px 0px 20px;
 		height: 20px;
 	}
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 360px) {
 	.footer {
-		display: flex;
 		flex-direction: column;
 	}
 }
