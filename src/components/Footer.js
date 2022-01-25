@@ -13,6 +13,9 @@ const Footer = () => {
 				<NavLink className="footer-link" to="Activites">
 					Activités
 				</NavLink>
+				<NavLink className="footer-link" to="Activites">
+					Activités
+				</NavLink>
 			</div>
 		</footer>
 	);

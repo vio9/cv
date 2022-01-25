@@ -1,18 +1,23 @@
-.title {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	text-align: center;
-	background-color: rgb(75, 154, 224);
-	padding: 20px;
-	margin-top: 0;
-	padding-top: 35px;
-	margin-top: -15px;
-	height: 141px;
-	color: rgb(255, 255, 255);
+.wrapper-home {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	.title {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		text-align: center;
+		background-color: rgb(75, 154, 224);
+		padding: 20px;
+		margin-top: 0;
+		padding-top: 35px;
+		margin-top: -15px;
+		height: 141px;
+		color: rgb(255, 255, 255);
 
-	h1,
-	h2 {
-		font-weight: 500;
+		h1,
+		h2 {
+			font-weight: 500;
+		}
 	}
 }

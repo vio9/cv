@@ -1,5 +1,7 @@
 import React from "react";
-
+import github from "../datas/assets/github.png";
+import gitlab from "../datas/assets/gitlab.png";
+import linkedin from "../datas/assets/linkedin.png";
 const Presentation = () => {
 	return (
 		<div className="presentation">
@@ -7,8 +9,18 @@ const Presentation = () => {
 			<p>
 				Retrouvez ci-dessous mes compétences, expériences professionnelles et
 				formation. Pour me contacter, n'hésitez pas à cliquer sur la page
-				contact !
+				contact ! Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Mauris sapien felis, pharetra ac libero a, feugiat elementum massa. Ut
+				cursus elit non metus dignissim, ut dictum dolor efficitur.
 			</p>
+			<div>
+				<p>Retrouvez-moi sur les réseaux sociaux : </p>
+				<div className="wrapper-social">
+					<img className="social" src={github} alt="github-logo" />
+					<img className="social" src={gitlab} alt="gitlab-logo" />
+					<img className="social" src={linkedin} alt="linkedin-logo" />
+				</div>
+			</div>
 		</div>
 	);
 };
