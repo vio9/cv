@@ -1,5 +1,5 @@
 import React from "react";
-import github from "../datas/assets/github.png";
+import githubwhite from "../datas/assets/githubwhite.png";
 import gitlab from "../datas/assets/gitlab.png";
 import linkedin from "../datas/assets/linkedin.png";
 const Presentation = () => {
@@ -16,9 +16,18 @@ const Presentation = () => {
 			<div>
 				<p>Retrouvez-moi sur les réseaux sociaux : </p>
 				<div className="wrapper-social">
-					<img className="social" src={github} alt="github-logo" />
-					<img className="social" src={gitlab} alt="gitlab-logo" />
-					<img className="social" src={linkedin} alt="linkedin-logo" />
+					<a href="https://github.com/vio9" target="_blank">
+						<img className="social" src={githubwhite} alt="github-logo" />
+					</a>
+					<a href="https://gitlab.com/violaine09" target="_blank">
+						<img className="social" src={gitlab} alt="gitlab-logo" />
+					</a>
+					<a
+						href="https://www.linkedin.com/in/violaine-ernotte/"
+						target="_blank"
+					>
+						<img className="social" src={linkedin} alt="linkedin-logo" />
+					</a>
 				</div>
 			</div>
 		</div>
