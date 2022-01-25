@@ -10,6 +10,7 @@ const Contact = () => {
 		<div className="contact-wrapper">
 			<Header />
 			<Navigation />
+
 			<form className="contact-form">
 				<label>Nom :</label>
 				<input type="text" name="nom" />

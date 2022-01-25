@@ -25,6 +25,7 @@
 		margin: 0 auto;
 		justify-content: center;
 		min-height: 67vh;
+		align-items: center;
 	}
 	label,
 	input,
@@ -41,5 +42,24 @@
 		display: flex;
 		justify-content: center;
 		text-align: center;
+	}
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 980px) {
+	.contact-wrapper {
+		label,
+		input,
+		textarea {
+			width: 70%;
+		}
+	}
+}
+@media only screen and (max-width: 480px) {
+	.contact-wrapper {
+		label,
+		input,
+		textarea {
+			width: 90%;
+		}
 	}
 }
