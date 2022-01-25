@@ -4,7 +4,7 @@ import Navigation from "./Navigation";
 
 const Activites = () => {
 	return (
-		<div>
+		<div className="wrapper-home">
 			<Header />
 			<Navigation />
 		</div>

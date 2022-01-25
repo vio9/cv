@@ -62,7 +62,7 @@ const Competences = () => {
 						</p>
 						<div className="sous-wrap-comp">
 							<span className="competence-span-green">Adobe CQ5</span>
-							<span className="competence-span-green">SharePoint Online,</span>
+							<span className="competence-span-green">SharePoint Online</span>
 							<span className="competence-span-green">Hybris</span>
 							<span className="competence-span-green">Drupal</span>
 							<span className="competence-span-green"> WordPress</span>

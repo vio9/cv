@@ -8,6 +8,7 @@ const ExperienceProList = () => {
 	const [experiencePro, setExperiencePro] = useState([]);
 	const [Clicked, setClicked] = useState(false);
 	const [isShow, setIsShow] = useState(false);
+	const [webmasterOnly, setWebmasterOnly] = useState(false);
 
 	const getExperience = async () => {
 		try {
@@ -32,6 +33,10 @@ const ExperienceProList = () => {
 		setClicked(!Clicked);
 	};
 
+	function webmasteronClick() {
+		setWebmasterOnly(!webmasterOnly);
+	}
+
 	return (
 		<>
 			<span onClick={handleClicked}>
@@ -45,11 +50,24 @@ const ExperienceProList = () => {
 				</h2>
 			</span>
 			{isShow ? (
-				<div className="wrapper">
-					{experiencePro.map((item) => (
-						<ExperiencePro {...item} />
-					))}
-				</div>
+				<>
+					<button className="filter-button" onClick={webmasteronClick}>
+						Voir uniquement les postes de développeur et de webmaster :
+						{webmasterOnly ? " On" : " Off"}
+					</button>
+					<div className="wrapper">
+						{experiencePro
+							.filter(
+								(item) =>
+									!webmasterOnly ||
+									item.poste.includes("Webma") ||
+									item.poste.includes("dev")
+							)
+							.map((item) => (
+								<ExperiencePro {...item} />
+							))}
+					</div>
+				</>
 			) : (
 				<></>
 			)}
