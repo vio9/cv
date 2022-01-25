@@ -4,6 +4,7 @@ import "../style/styles.scss";
 import Header from "./Header";
 import Footer from "./Footer";
 import { useState } from "react/cjs/react.development";
+
 const Contact = () => {
 	return (
 		<div className="contact-wrapper">

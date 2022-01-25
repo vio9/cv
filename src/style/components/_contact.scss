@@ -1,11 +1,30 @@
 .contact-wrapper {
-	background-color: rgb(229, 230, 247);
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	.title {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		background-color: rgb(75, 154, 224);
+		padding: 20px;
+		padding-top: 35px;
+		margin-top: -15px;
+		color: rgb(255, 255, 255);
+		h1,
+		h2 {
+			font-weight: 500;
+			margin: 0;
+			padding: 5px;
+		}
+	}
 	.contact-form {
 		display: flex;
 		flex-direction: column;
 		width: 80%;
 		margin: 0 auto;
 		justify-content: center;
+		min-height: 67vh;
 	}
 	label,
 	input,
