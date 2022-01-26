@@ -1,8 +1,12 @@
 import React from "react";
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import "../style/styles.scss";
+import { ThemeContext } from "../utils/context/ThemeContext";
+import BoutonMode from "./BoutonMode";
 
 const Navigation = () => {
+	const { theme } = useContext(ThemeContext);
 	return (
 		<div className="navbar">
 			<NavLink className="nav-link" exact to="/">
@@ -14,9 +18,7 @@ const Navigation = () => {
 			<NavLink className="nav-link" to="/Activites">
 				Activités
 			</NavLink>
-			<div className="wrapper-night-mood">
-				<button className="night-mood"></button>
-			</div>
+			<BoutonMode />
 		</div>
 	);
 };
