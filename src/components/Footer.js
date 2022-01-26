@@ -16,9 +16,7 @@ const Footer = () => {
 			<NavLink className="footer-link" to="Activites">
 				Activités
 			</NavLink>
-			<NavLink className="footer-link" to="Activites">
-				Activités
-			</NavLink>
+
 			<a href="https://github.com/vio9" target="_blank">
 				<img
 					className="footer-link-image"

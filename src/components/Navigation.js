@@ -14,6 +14,9 @@ const Navigation = () => {
 			<NavLink className="nav-link" to="/Activites">
 				Activités
 			</NavLink>
+			<div className="wrapper-night-mood">
+				<button className="night-mood"></button>
+			</div>
 		</div>
 	);
 };
