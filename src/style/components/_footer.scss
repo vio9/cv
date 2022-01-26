@@ -30,10 +30,15 @@
 
 @media only screen and (max-width: 450px) {
 	.footer {
-		justify-content: left;
+		justify-content: center;
 		.footer-link {
 			padding: 5px;
 			margin: 10px;
 		}
+	}
+}
+@media only screen and (min-width: 810px) and (max-width: 1024px) {
+	.footer {
+		height: 20vh;
 	}
 }
