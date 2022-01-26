@@ -68,19 +68,22 @@
 	}
 }
 
-.filter-button {
-	background-color: rgb(110, 123, 143);
-	color: #fff;
-	padding: 10px;
-	border: none;
-	font-size: 1rem;
-	cursor: pointer;
+.wrapper-button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-left: 0px;
-	border-radius: 6px;
-}
-.filter-button:hover {
-	background-color: rgb(124, 118, 118);
+	margin: 10px;
+	.filter-button {
+		background-color: rgb(110, 123, 143);
+		color: #fff;
+		padding: 10px;
+		border: none;
+		font-size: 1rem;
+		cursor: pointer;
+		margin: 10px;
+		border-radius: 6px;
+	}
+	.filter-button:hover {
+		background-color: rgb(124, 118, 118);
+	}
 }

@@ -51,10 +51,13 @@ const ExperienceProList = () => {
 			</span>
 			{isShow ? (
 				<>
-					<button className="filter-button" onClick={webmasteronClick}>
-						Voir uniquement les postes de développeur et de webmaster :
-						{webmasterOnly ? " On" : " Off"}
-					</button>
+					<div className="wrapper-button">
+						<button className="filter-button" onClick={webmasteronClick}>
+							{webmasterOnly
+								? "Voir uniquement Webmaster et développeur"
+								: " Voir tout"}
+						</button>
+					</div>
 					<div className="wrapper">
 						{experiencePro
 							.filter(
