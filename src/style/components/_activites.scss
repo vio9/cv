@@ -1,14 +1,27 @@
 .zen {
 	display: flex;
 	flex-direction: column;
-	background-color: rgb(113, 153, 128);
+	background-color: rgb(89, 155, 114);
 	text-align: center;
 	color: #eee;
 	padding: 20px;
 	margin: 0;
-	min-height: 50vh;
+	//	height: 100vh;
+
 	.title-activités {
-		color: blue;
+		color: rgb(181, 231, 200);
+	}
+	.photos-wrapper {
+		display: flex;
+
+		.photo {
+			display: flex;
+
+			img {
+				display: flex;
+				max-width: 70%;
+			}
+		}
 	}
 }
 
@@ -17,13 +30,25 @@
 	flex-direction: column;
 	text-align: center;
 	color: #333;
-	background-color: rgb(241, 182, 227);
+	background-color: rgb(241, 204, 241);
 	padding: 30px;
 	margin: 40px;
 	padding: 20px;
 	margin: 0;
-	min-height: 50vh;
+	//	height: 100vh;
 	.title-activités {
-		color: red;
+		color: rgb(65, 52, 61);
+	}
+	.photos-wrapper {
+		display: flex;
+
+		.photo {
+			display: flex;
+
+			img {
+				display: flex;
+				max-width: 70%;
+			}
+		}
 	}
 }
