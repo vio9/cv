@@ -1,13 +1,11 @@
 import React, { useContext } from "react";
+import { useState } from "react/cjs/react.development";
+import { ThemeContext } from "../utils/context/ThemeContext";
 import Header from "./Header";
 import Navigation from "./Navigation";
 import "../style/styles.scss";
-import { ThemeContext } from "../utils/context/ThemeContext";
-import { useState } from "react/cjs/react.development";
 import Footer from "./Footer";
-import musesbresil from "../datas/assets/musesbresil.jpg";
 import musesbresil2 from "../datas/assets/musesbresil2.jpg";
-import musesmarvejols from "../datas/assets/musesmarvejols.jpg";
 import SliderWrapper from "./SliderWrapper";
 
 const Activites = () => {
