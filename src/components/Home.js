@@ -8,12 +8,10 @@ import Formation from "./Formation";
 import Footer from "./Footer";
 import Header from "./Header";
 import GoToTop from "./GoToTop";
-// import ThemeContextProvider from "../utils/context/ThemeContext";
 
 const Home = () => {
 	return (
 		<div className="wrapper-home">
-			{/* <ThemeContextProvider> */}
 			<Header />
 			<Navigation />
 			<Presentation />
@@ -22,7 +20,6 @@ const Home = () => {
 			<Formation />
 			<GoToTop />
 			<Footer />
-			{/* </ThemeContextProvider> */}
 		</div>
 	);
 };
