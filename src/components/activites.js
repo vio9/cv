@@ -6,8 +6,8 @@ import { ThemeContext } from "../utils/context/ThemeContext";
 import { useState } from "react/cjs/react.development";
 import Footer from "./Footer";
 import musesbresil from "../datas/assets/musesbresil.jpg";
-import Presentation from "./Presentation";
-import activitéDetail from "./activitéDetail";
+import musesbretagne from "../datas/assets/musesbretagne.jpg";
+import musesmarvejols from "../datas/assets/musesmarvejols.jpg";
 
 const Activites = () => {
 	function ThemeChoice(props) {
@@ -19,7 +19,12 @@ const Activites = () => {
 		};
 
 		return (
-			<select name="theme" defaultValue={theme} onChange={handleChange}>
+			<select
+				className="select-theme"
+				name="theme"
+				defaultValue={theme}
+				onChange={handleChange}
+			>
 				<option value="zen">Zen</option>
 				<option value="pop">Pop</option>
 			</select>
@@ -38,6 +43,31 @@ const Activites = () => {
 		theme,
 		updateTheme: setTheme,
 	};
+	const [details, setDetails] = useState([
+		{
+			id: 1,
+			presentation:
+				"Lorem Ipsum is simply dummy text of the printing and typesettin",
+		},
+		{
+			id: 2,
+			presentation:
+				"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 2",
+		},
+		{
+			id: 3,
+			presentation:
+				"Lorem Ipsum is simply dummy text of the nting and typesetting industry. Lorem I printing and typesetting industry. Lorem Ipsum has 3",
+		},
+		{
+			presentation2:
+				"presentation 2! Lorem Ipsum is simply dummy text of the nting and typesetting industry. Lorem I printing and typese",
+		},
+		{
+			presentation2:
+				"presentation 2 AGAIN! Lorem Ipsum is simply dummy text of the nting and typesetting industry. Lorem I printing and typese",
+		},
+	]);
 
 	return (
 		<ThemeContext.Provider value={contextValue}>
@@ -47,14 +77,19 @@ const Activites = () => {
 				<div className={theme}>
 					<ToolBar />
 					<h2 className="title-activités"> Lorem Ipsum is simply dummy te</h2>
-					<activitéDetail />
-					<p className="presentation-perso">
-						Lorem Ipsum is simply dummy text of the printing and typesetting
-						industry. Lorem Ipsum has been the industry's standard dummy text
-						ever since the 1500s, when an unknown printer took a galley of type
-						and scrambled it to make a type specimen book. It has survived not
-						only five centuries.
-					</p>
+					<div>
+						{details.map((item) => (
+							<p
+								className="presentation-perso"
+								key={item.id}
+								presentation={item.presentation}
+							>
+								{item.presentation}
+							</p>
+						))}
+					</div>
+					<div></div>
+
 					<div className="photos-wrapper">
 						<div className="photo">
 							<img src={musesbresil} alt="Les muses Tanguent au Brésil" />
@@ -67,6 +102,27 @@ const Activites = () => {
 						and scrambled it to make a type specimen book. It has survived not
 						only five centuries.
 					</p>
+					<div className="photos-wrapper">
+						<div className="photo">
+							<img src={musesbretagne} alt="Les muses Tanguent au Brésil" />
+						</div>
+					</div>
+					<div>
+						{details.map((item) => (
+							<p
+								className="presentation-perso"
+								key={item.id}
+								presentation={item.presentation2}
+							>
+								{item.presentation2}
+							</p>
+						))}
+					</div>
+					<div className="photos-wrapper">
+						<div className="photo">
+							<img src={musesmarvejols} alt="Les muses Tanguent au Brésil" />
+						</div>
+					</div>
 				</div>
 				<Footer />
 			</div>
