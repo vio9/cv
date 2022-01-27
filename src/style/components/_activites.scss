@@ -6,6 +6,12 @@
 	color: #318ea5;
 	padding: 20px;
 	margin: 0;
+
+	.slide-inner {
+		height: 400px;
+		justify-content: center;
+		display: flex;
+	}
 	.select-theme {
 		padding: 10px;
 		border: none;
@@ -21,6 +27,7 @@
 		.photo {
 			display: flex;
 			justify-content: center;
+			width: 100%;
 
 			img {
 				display: flex;
@@ -59,7 +66,7 @@
 
 			img {
 				display: flex;
-				max-width: 70%;
+				max-width: 60%;
 			}
 		}
 	}

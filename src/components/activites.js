@@ -6,8 +6,9 @@ import { ThemeContext } from "../utils/context/ThemeContext";
 import { useState } from "react/cjs/react.development";
 import Footer from "./Footer";
 import musesbresil from "../datas/assets/musesbresil.jpg";
-import musesbretagne from "../datas/assets/musesbretagne.jpg";
+import musesbresil2 from "../datas/assets/musesbresil2.jpg";
 import musesmarvejols from "../datas/assets/musesmarvejols.jpg";
+import SliderWrapper from "./SliderWrapper";
 
 const Activites = () => {
 	function ThemeChoice(props) {
@@ -88,25 +89,8 @@ const Activites = () => {
 							</p>
 						))}
 					</div>
-					<div></div>
+					<SliderWrapper />
 
-					<div className="photos-wrapper">
-						<div className="photo">
-							<img src={musesbresil} alt="Les muses Tanguent au Brésil" />
-						</div>
-					</div>
-					<p className="presentation-perso">
-						Lorem Ipsum is simply dummy text of the printing and typesetting
-						industry. Lorem Ipsum has been the industry's standard dummy text
-						ever since the 1500s, when an unknown printer took a galley of type
-						and scrambled it to make a type specimen book. It has survived not
-						only five centuries.
-					</p>
-					<div className="photos-wrapper">
-						<div className="photo">
-							<img src={musesbretagne} alt="Les muses Tanguent au Brésil" />
-						</div>
-					</div>
 					<div>
 						{details.map((item) => (
 							<p
@@ -120,7 +104,7 @@ const Activites = () => {
 					</div>
 					<div className="photos-wrapper">
 						<div className="photo">
-							<img src={musesmarvejols} alt="Les muses Tanguent au Brésil" />
+							<img src={musesbresil2} alt="Les muses Tanguent au Brésil" />
 						</div>
 					</div>
 				</div>
