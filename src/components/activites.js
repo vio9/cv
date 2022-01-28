@@ -47,25 +47,27 @@ const Activites = () => {
 		{
 			id: 1,
 			presentation:
-				"Lorem Ipsum is simply dummy text of the printing and typesettin",
+				"Les muses Tanguent est une fanfare majoritairement féminine, issue de l'école d'Architecture de Versailles, qui existe depuis 2003.",
 		},
 		{
 			id: 2,
 			presentation:
-				"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 2",
+				"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 2 etting industry. Lorem I printing and typesetting industry. Lorem Ipsum has",
 		},
-		{
-			id: 3,
-			presentation:
-				"Lorem Ipsum is simply dummy text of the nting and typesetting industry. Lorem I printing and typesetting industry. Lorem Ipsum has 3",
-		},
+	]);
+
+	const [details2, setDetails2] = useState([
 		{
 			presentation2:
-				"presentation 2! Lorem Ipsum is simply dummy text of the nting and typesetting industry. Lorem I printing and typese",
+				"Lorem Ipsum is simply dummy text of the printing and typesettin",
 		},
 		{
 			presentation2:
 				"presentation 2 AGAIN! Lorem Ipsum is simply dummy text of the nting and typesetting industry. Lorem I printing and typese",
+		},
+		{
+			presentation2:
+				"presentation 2 AGAIN! Lorem Ipsum is simply dummy text of the nting and typesetting industry. Lorem I printing and typesesimply dummy text of the nting and typesetting industry. Lorem I pri",
 		},
 	]);
 
@@ -79,8 +81,7 @@ const Activites = () => {
 					<div className="activity-card-wrapper">
 						<div className="activity-card">
 							<h2 className="title-activités">
-								{" "}
-								Lorem Ipsum is simply dummy te
+								Membre de la fanfare Les Muses Tanguent depuis 2008 !
 							</h2>
 							<div>
 								{details.map((item) => (
@@ -96,7 +97,10 @@ const Activites = () => {
 							<SliderWrapper />
 						</div>
 						<div className="activity-card">
-							{details.map((item) => (
+							<h2 className="title-activités">
+								Quelques pays visités par les Muses Tanguent!
+							</h2>
+							{details2.map((item) => (
 								<p
 									className="presentation-perso"
 									key={item.id}
