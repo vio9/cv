@@ -67,10 +67,6 @@ const Activites = () => {
 			presentation2:
 				"Que cela soit dans le cadre de festivals de fanfare ou de musique, dans le cadre de la visite d'un membre de la fanfare résident dans un autre pays ou par curiosité touristique et envie de jouer ! ",
 		},
-		{
-			presentation2:
-				"presentation 2 AGAIN! Lorem Ipsum is simply dummy text of the nting and typesetting industry. Lorem I printing and typesesimply dummy text of the nting and typesetting industry. Lorem I pri",
-		},
 	]);
 
 	return (
@@ -100,8 +96,9 @@ const Activites = () => {
 						</div>
 						<div className="activity-card">
 							<h2 className="title-activités">
-								Quelques pays visités par les Muses Tanguent !
+								🇧🇷 🇷🇺 Quelques pays visités par les Muses Tanguent ! 🇺🇸 🇳🇱
 							</h2>
+
 							{details2.map((item) => (
 								<p
 									className="presentation-perso"
