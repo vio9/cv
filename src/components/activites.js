@@ -6,6 +6,8 @@ import Navigation from "./Navigation";
 import "../style/styles.scss";
 import Footer from "./Footer";
 import musesbresil2 from "../datas/assets/musesbresil2.jpg";
+import musesrio from "../datas/assets/musesrio.jpg";
+import rio2 from "../datas/assets/rio2.jpg";
 import SliderWrapper from "./SliderWrapper";
 
 const Activites = () => {
@@ -59,11 +61,11 @@ const Activites = () => {
 	const [details2, setDetails2] = useState([
 		{
 			presentation2:
-				"Lorem Ipsum is simply dummy text of the printing and typesettin",
+				"Depuis que la fanfare existe, nous avons eu la chance de pouvoir partir visiter de nombreux pays et villes françaises pour y jouer.",
 		},
 		{
 			presentation2:
-				"presentation 2 AGAIN! Lorem Ipsum is simply dummy text of the nting and typesetting industry. Lorem I printing and typese",
+				"Que cela soit dans le cadre de festivals de fanfare ou de musique, dans le cadre de la visite d'un membre de la fanfare résident dans un autre pays ou par curiosité touristique et envie de jouer ! ",
 		},
 		{
 			presentation2:
@@ -98,7 +100,7 @@ const Activites = () => {
 						</div>
 						<div className="activity-card">
 							<h2 className="title-activités">
-								Quelques pays visités par les Muses Tanguent!
+								Quelques pays visités par les Muses Tanguent !
 							</h2>
 							{details2.map((item) => (
 								<p
@@ -112,7 +114,13 @@ const Activites = () => {
 
 							<div className="photos-wrapper">
 								<div className="photo">
+									<img src={musesrio} alt="Les muses Tanguent au Brésil" />
+								</div>
+								<div className="photo">
 									<img src={musesbresil2} alt="Les muses Tanguent au Brésil" />
+								</div>
+								<div className="photo">
+									<img src={rio2} alt="Les muses Tanguent au Brésil" />
 								</div>
 							</div>
 						</div>
