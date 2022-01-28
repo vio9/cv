@@ -10,10 +10,10 @@ const Footer = () => {
 			<NavLink className="footer-link" exact to="/">
 				Home
 			</NavLink>
-			<NavLink className="footer-link" to="Contact">
+			<NavLink className="footer-link" to="/Contact">
 				Contact
 			</NavLink>
-			<NavLink className="footer-link" to="Activites">
+			<NavLink className="footer-link" to="/Activites">
 				Activités
 			</NavLink>
 
