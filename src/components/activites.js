@@ -76,34 +76,41 @@ const Activites = () => {
 				<Navigation />
 				<div className={theme}>
 					<ToolBar />
-					<h2 className="title-activités"> Lorem Ipsum is simply dummy te</h2>
-					<div>
-						{details.map((item) => (
-							<p
-								className="presentation-perso"
-								key={item.id}
-								presentation={item.presentation}
-							>
-								{item.presentation}
-							</p>
-						))}
-					</div>
-					<SliderWrapper />
+					<div className="activity-card-wrapper">
+						<div className="activity-card">
+							<h2 className="title-activités">
+								{" "}
+								Lorem Ipsum is simply dummy te
+							</h2>
+							<div>
+								{details.map((item) => (
+									<p
+										className="presentation-perso"
+										key={item.id}
+										presentation={item.presentation}
+									>
+										{item.presentation}
+									</p>
+								))}
+							</div>
+							<SliderWrapper />
+						</div>
+						<div className="activity-card">
+							{details.map((item) => (
+								<p
+									className="presentation-perso"
+									key={item.id}
+									presentation={item.presentation2}
+								>
+									{item.presentation2}
+								</p>
+							))}
 
-					<div>
-						{details.map((item) => (
-							<p
-								className="presentation-perso"
-								key={item.id}
-								presentation={item.presentation2}
-							>
-								{item.presentation2}
-							</p>
-						))}
-					</div>
-					<div className="photos-wrapper">
-						<div className="photo">
-							<img src={musesbresil2} alt="Les muses Tanguent au Brésil" />
+							<div className="photos-wrapper">
+								<div className="photo">
+									<img src={musesbresil2} alt="Les muses Tanguent au Brésil" />
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
