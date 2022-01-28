@@ -1,5 +1,5 @@
-import React, { useContext } from "react";
-import { useState } from "react/cjs/react.development";
+import React, { useContext, useState } from "react";
+// import { useState } from "react/cjs/react.development";
 import { ThemeContext } from "../utils/context/ThemeContext";
 import Header from "./Header";
 import Navigation from "./Navigation";
@@ -37,6 +37,7 @@ const Activites = () => {
 			</div>
 		);
 	}
+
 	const [theme, setTheme] = useState("zen");
 	const contextValue = {
 		theme,
