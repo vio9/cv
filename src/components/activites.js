@@ -118,6 +118,7 @@ const Activites = () => {
 									Les muses au Brésil dans le cadre du festival Honk Rio
 								</p>
 							</strong>
+							<p className="presentation-perso">Cliquez pour agrandir 👆</p>
 							<div className="photos-wrapper">
 								<Zoom>
 									<img
@@ -166,7 +167,6 @@ const Activites = () => {
 									/>
 								</Zoom>
 							</div>
-							<p>CLiquez pour agrandir 👆</p>
 						</div>
 					</div>
 				</div>
