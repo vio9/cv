@@ -65,11 +65,24 @@
 	flex-direction: column;
 	text-align: center;
 	color: #333;
-	background-color: #9ce0d4;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 	padding: 30px;
 	margin: 40px;
 	padding: 20px;
 	margin: 0;
+	@keyframes gradient {
+		0% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 50%;
+		}
+	}
 
 	.select-theme {
 		margin: 10px 0 30px 0;
