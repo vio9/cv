@@ -8,6 +8,9 @@ import Footer from "./Footer";
 import musesbresil2 from "../datas/assets/musesbresil2.jpg";
 import musesrio from "../datas/assets/musesrio.jpg";
 import rio2 from "../datas/assets/rio2.jpg";
+import tanjazz1 from "../datas/assets/tanjazz1.jpg";
+import tanjazz2 from "../datas/assets/tanjazz2.jpg";
+import tanjazz3 from "../datas/assets/tanjazz3.jpg";
 import SliderWrapper from "./SliderWrapper";
 
 const Activites = () => {
@@ -49,12 +52,12 @@ const Activites = () => {
 		{
 			id: 1,
 			presentation:
-				"Les muses Tanguent est une fanfare majoritairement féminine, issue de l'école d'Architecture de Versailles, qui existe depuis 2003.",
+				"🎺 Les muses Tanguent est une fanfare majoritairement féminine, issue de l'école d'Architecture de Versailles, qui existe depuis 2003.",
 		},
 		{
 			id: 2,
 			presentation:
-				"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 2 etting industry. Lorem I printing and typesetting industry. Lorem Ipsum has",
+				"🥁 Nous nous produisons dans des festivals musicaux, lors de concerts, parades, concours, mais aussi d'événements privés (mariages, anniversaires).",
 		},
 	]);
 
@@ -108,7 +111,11 @@ const Activites = () => {
 									{item.presentation2}
 								</p>
 							))}
-
+							<strong>
+								<p className="presentation-perso">
+									Les muses au Brésil dans le cadre du festival Honk Rio
+								</p>
+							</strong>
 							<div className="photos-wrapper">
 								<div className="photo">
 									<img src={musesrio} alt="Les muses Tanguent au Brésil" />
@@ -118,6 +125,22 @@ const Activites = () => {
 								</div>
 								<div className="photo">
 									<img src={rio2} alt="Les muses Tanguent au Brésil" />
+								</div>
+							</div>
+							<strong>
+								<p className="presentation-perso">
+									Les muses au Maroc dans le cadre du Tanjazz Festival !
+								</p>
+							</strong>
+							<div className="photos-wrapper">
+								<div className="photo">
+									<img src={tanjazz1} alt="Les muses Tanguent à Tanger" />
+								</div>
+								<div className="photo">
+									<img src={tanjazz2} alt="Les muses Tanguent à Tanger" />
+								</div>
+								<div className="photo">
+									<img src={tanjazz3} alt="Les muses Tanguent à Tanger" />
 								</div>
 							</div>
 						</div>
