@@ -31,7 +31,8 @@
 @media only screen and (max-width: 450px) {
 	.footer {
 		justify-content: center;
-		.footer-link {
+		.footer-link,
+		.footer-link-image {
 			padding: 5px;
 			margin: 10px;
 		}
