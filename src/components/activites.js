@@ -12,6 +12,8 @@ import tanjazz1 from "../datas/assets/tanjazz1.jpg";
 import tanjazz2 from "../datas/assets/tanjazz2.jpg";
 import tanjazz3 from "../datas/assets/tanjazz3.jpg";
 import SliderWrapper from "./SliderWrapper";
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
 const Activites = () => {
 	function ThemeChoice(props) {
@@ -117,15 +119,23 @@ const Activites = () => {
 								</p>
 							</strong>
 							<div className="photos-wrapper">
-								<div className="photo">
-									<img src={musesrio} alt="Les muses Tanguent au Brésil" />
-								</div>
-								<div className="photo">
-									<img src={musesbresil2} alt="Les muses Tanguent au Brésil" />
-								</div>
-								<div className="photo">
-									<img src={rio2} alt="Les muses Tanguent au Brésil" />
-								</div>
+								<Zoom>
+									<img
+										src={musesrio}
+										alt="Les muses Tanguent à Rio"
+										width="210"
+									/>
+								</Zoom>
+								<Zoom>
+									<img
+										src={musesbresil2}
+										alt="Les muses Tanguent à Rio"
+										width="210"
+									/>
+								</Zoom>
+								<Zoom>
+									<img src={rio2} alt="Les muses Tanguent à Rio" width="210" />
+								</Zoom>
 							</div>
 							<strong>
 								<p className="presentation-perso">
@@ -133,16 +143,30 @@ const Activites = () => {
 								</p>
 							</strong>
 							<div className="photos-wrapper">
-								<div className="photo">
-									<img src={tanjazz1} alt="Les muses Tanguent à Tanger" />
-								</div>
-								<div className="photo">
-									<img src={tanjazz2} alt="Les muses Tanguent à Tanger" />
-								</div>
-								<div className="photo">
-									<img src={tanjazz3} alt="Les muses Tanguent à Tanger" />
-								</div>
+								<Zoom>
+									<img
+										src={tanjazz1}
+										alt="Les muses Tanguent à Tanger"
+										width="210"
+									/>
+								</Zoom>
+
+								<Zoom>
+									<img
+										src={tanjazz2}
+										alt="Les muses Tanguent à Tanger"
+										width="210"
+									/>
+								</Zoom>
+								<Zoom>
+									<img
+										src={tanjazz3}
+										alt="Les muses Tanguent à Tanger"
+										width="210"
+									/>
+								</Zoom>
 							</div>
+							<p>CLiquez pour agrandir 👆</p>
 						</div>
 					</div>
 				</div>
