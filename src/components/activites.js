@@ -6,15 +6,13 @@ import Navigation from "./Navigation";
 import "../style/styles.scss";
 import Footer from "./Footer";
 import musesbresil2 from "../datas/assets/musesbresil2.jpg";
-import musesrio from "../datas/assets/musesrio.jpg";
 import rio2 from "../datas/assets/rio2.jpg";
 import tanjazz1 from "../datas/assets/tanjazz1.jpg";
 import tanjazz2 from "../datas/assets/tanjazz2.jpg";
-import tanjazz3 from "../datas/assets/tanjazz3.jpg";
 import SliderWrapper from "./SliderWrapper";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
-
+import ReseauxMuses from "./ReseauxMuses";
 const Activites = () => {
 	function ThemeChoice(props) {
 		const { theme, updateTheme } = useContext(ThemeContext);
@@ -98,6 +96,7 @@ const Activites = () => {
 								))}
 							</div>
 							<SliderWrapper />
+							<ReseauxMuses />
 						</div>
 						<div className="activity-card">
 							<h2 className="title-activités">

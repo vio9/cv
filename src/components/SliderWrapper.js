@@ -5,6 +5,7 @@ import images from "../datas/assets/images";
 function SliderWrapper() {
 	return (
 		<>
+			<p>Glissez pour faire défiler 👈</p>
 			<Slider
 				onSlideComplete={(i) => {
 					console.log("finished dragging, current slide is", i);
@@ -21,7 +22,6 @@ function SliderWrapper() {
 					<img src={url} key={index} alt={title} />
 				))}
 			</Slider>
-			<p>Glissez pour faire défiler 👆</p>
 		</>
 	);
 }
