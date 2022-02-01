@@ -114,7 +114,7 @@ const Activites = () => {
 							))}
 							<strong>
 								<p className="presentation-perso">
-									Les muses au Brésil dans le cadre du festival Honk Rio
+									Les muses au Brésil dans le cadre du festival Honk Rio ☆ﾟ. ｡
 								</p>
 							</strong>
 							<p className="presentation-perso">Cliquez pour agrandir 👆</p>
@@ -124,15 +124,21 @@ const Activites = () => {
 										src={musesbresil2}
 										alt="Les muses Tanguent à Rio"
 										width="240"
+										height="170"
 									/>
 								</Zoom>
 								<Zoom>
-									<img src={rio2} alt="Les muses Tanguent à Rio" width="240" />
+									<img
+										src={rio2}
+										alt="Les muses Tanguent à Rio"
+										width="240"
+										height="170"
+									/>
 								</Zoom>
 							</div>
 							<strong>
 								<p className="presentation-perso">
-									Les muses au Maroc dans le cadre du Tanjazz Festival !
+									Les muses au Maroc dans le cadre du Tanjazz Festival ☆ﾟ. * ･
 								</p>
 							</strong>
 							<div className="photos-wrapper">
@@ -141,6 +147,7 @@ const Activites = () => {
 										src={tanjazz1}
 										alt="Les muses Tanguent à Tanger"
 										width="240"
+										height="170"
 									/>
 								</Zoom>
 
@@ -149,6 +156,7 @@ const Activites = () => {
 										src={tanjazz2}
 										alt="Les muses Tanguent à Tanger"
 										width="240"
+										height="170"
 									/>
 								</Zoom>
 							</div>

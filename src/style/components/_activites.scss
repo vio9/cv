@@ -3,7 +3,7 @@
 	flex-direction: column;
 	background-color: #5fc1da;
 	text-align: center;
-	color: #318ea5;
+	color: #226a7c;
 	padding: 20px;
 	margin: 0;
 	font-size: 1.1em;
@@ -33,6 +33,10 @@
 
 			.insta {
 				width: 2rem;
+			}
+			.insta-texte-muses {
+				color: rgb(61, 98, 153);
+				font-weight: 500;
 			}
 
 			.slide-inner {
@@ -125,6 +129,10 @@
 
 			.insta {
 				width: 2rem;
+			}
+			.insta-texte-muses {
+				color: rgb(53, 51, 77);
+				font-weight: 500;
 			}
 
 			.slide-inner {
