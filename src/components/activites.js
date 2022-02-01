@@ -122,20 +122,13 @@ const Activites = () => {
 							<div className="photos-wrapper">
 								<Zoom>
 									<img
-										src={musesrio}
-										alt="Les muses Tanguent à Rio"
-										width="210"
-									/>
-								</Zoom>
-								<Zoom>
-									<img
 										src={musesbresil2}
 										alt="Les muses Tanguent à Rio"
-										width="210"
+										width="240"
 									/>
 								</Zoom>
 								<Zoom>
-									<img src={rio2} alt="Les muses Tanguent à Rio" width="210" />
+									<img src={rio2} alt="Les muses Tanguent à Rio" width="240" />
 								</Zoom>
 							</div>
 							<strong>
@@ -148,7 +141,7 @@ const Activites = () => {
 									<img
 										src={tanjazz1}
 										alt="Les muses Tanguent à Tanger"
-										width="210"
+										width="240"
 									/>
 								</Zoom>
 
@@ -156,14 +149,7 @@ const Activites = () => {
 									<img
 										src={tanjazz2}
 										alt="Les muses Tanguent à Tanger"
-										width="210"
-									/>
-								</Zoom>
-								<Zoom>
-									<img
-										src={tanjazz3}
-										alt="Les muses Tanguent à Tanger"
-										width="210"
+										width="240"
 									/>
 								</Zoom>
 							</div>

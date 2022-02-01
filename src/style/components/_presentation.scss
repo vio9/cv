@@ -8,6 +8,27 @@
 	font-size: 18px;
 	justify-content: center;
 
+	.presentation-sous-wrapper {
+		display: flex;
+		flex-direction: column;
+
+		.profil-texte {
+			margin: 20px auto;
+			max-width: 50rem;
+			padding: 10px;
+			display: flex;
+		}
+
+		.profil-picture-wrapper {
+			display: flex;
+			justify-content: center;
+
+			.profil-picture {
+				max-width: 15rem;
+				border-radius: 130px;
+			}
+		}
+	}
 	.wrapper-social {
 		display: flex;
 		flex-direction: row;
@@ -22,6 +43,6 @@
 @media only screen and (min-width: 810px) and (max-width: 1024px) {
 	.presentation {
 		margin: 30px 0px 30px 0px;
-		height: 30vh;
+		//	height: 30vh;
 	}
 }

@@ -8,7 +8,7 @@
 	margin: 0;
 	font-size: 1.1em;
 	.select-theme {
-		padding: 10px;
+		padding: 5px;
 		border: none;
 		border-radius: 5px;
 		background-color: #c7e6dd;
@@ -25,7 +25,7 @@
 		.activity-card {
 			display: flex;
 			flex-direction: column;
-			width: 50%;
+			width: 40%;
 			padding: 50px;
 			border-radius: 20px;
 			margin: 10px;
@@ -47,9 +47,11 @@
 			}
 			.photos-wrapper {
 				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
 
 				[data-rmiz-wrap="visible"] {
-					margin: 0 10px 0 10px;
+					margin: 0 10px 10px 10px;
 					img {
 						border-radius: 5px;
 					}
@@ -136,6 +138,15 @@
 			}
 			.photos-wrapper {
 				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+
+				[data-rmiz-wrap="visible"] {
+					margin: 0 10px 10px 10px;
+					img {
+						border-radius: 5px;
+					}
+				}
 
 				.photo {
 					display: flex;
@@ -152,13 +163,43 @@
 	}
 }
 
+@media only screen and (min-width: 811px) and (max-width: 1100px) {
+	.zen,
+	.pop {
+		.activity-card-wrapper {
+			flex-direction: row;
+			.activity-card {
+				width: 40%;
+			}
+			.photos-wrapper {
+				flex-direction: flex;
+				flex-wrap: wrap;
+				[data-rmiz-wrap="visible"] {
+					margin: 0 10px 0 10px;
+					img {
+						border-radius: 5px;
+						max-width: 240px;
+						margin: 4px;
+						display: flex;
+					}
+				}
+
+				.photo {
+					img {
+						max-width: 90%;
+					}
+				}
+			}
+		}
+	}
+}
 @media only screen and (min-width: 451px) and (max-width: 810px) {
 	.zen,
 	.pop {
 		.activity-card-wrapper {
 			flex-direction: column;
 			.activity-card {
-				width: 70%;
+				width: 80%;
 				.slider-inner {
 					height: 200px;
 				}
@@ -168,7 +209,8 @@
 				color: rgb(55, 94, 95);
 			}
 			.photos-wrapper {
-				flex-direction: column;
+				flex-direction: flex;
+				flex-wrap: wrap;
 				[data-rmiz-wrap="visible"] {
 					margin: 0 10px 0 10px;
 					img {

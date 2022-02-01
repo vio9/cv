@@ -2,17 +2,26 @@ import React from "react";
 import githubwhite from "../datas/assets/githubwhite.png";
 import gitlab from "../datas/assets/gitlab.png";
 import linkedin from "../datas/assets/linkedin.png";
+import violaine from "../datas/assets/violaine.jpeg";
+
 const Presentation = () => {
 	return (
 		<div className="presentation">
 			<h2>Bienvenue sur mon CV en ligne ! ✨</h2>
-			<p>
-				Retrouvez ci-dessous mes compétences, expériences professionnelles et
-				formation. Pour me contacter, n'hésitez pas à cliquer sur la page
-				contact ! Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				Mauris sapien felis, pharetra ac libero a, feugiat elementum massa. Ut
-				cursus elit non metus dignissim, ut dictum dolor efficitur.
-			</p>
+			<div className="presentation-sous-wrapper">
+				<div className="profil-picture-wrapper">
+					<img className="profil-picture" src={violaine} alt="photo Violaine" />
+				</div>
+				<p className="profil-texte">
+					Après 7 ans à travailler comme webmaster / intégrateur ou chef de
+					projet Web au sein de nombreuses entreprises en mission via des SSII
+					ou en freelance, j'ai décidé de faire une formation développeur web /
+					web mobile pour me réorienter car j'adore coder, construire des sites
+					internets et des applications. Après un stage au sein de l'entreprise
+					FLoax à l'issue de ma formation, je suis désormais à la recherche de
+					mon premier emploi comme développeur front end.
+				</p>
+			</div>
 			<div>
 				<p>Retrouvez-moi sur les réseaux sociaux : </p>
 				<div className="wrapper-social">
