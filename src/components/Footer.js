@@ -24,9 +24,9 @@ const Footer = () => {
 					alt="github-logo"
 				/>
 			</a>
-			<a href="https://gitlab.com/violaine09" target="_blank">
+			{/* <a href="https://gitlab.com/violaine09" target="_blank">
 				<img className="footer-link-image" src={gitlab} alt="gitlab-logo" />
-			</a>
+			</a> */}
 			<a href="https://www.linkedin.com/in/violaine-ernotte/" target="_blank">
 				<img className="footer-link-image" src={linkedin} alt="linkedin-logo" />
 			</a>
