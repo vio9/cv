@@ -1,9 +1,9 @@
 import React from "react";
+import { useState } from "react";
 import Navigation from "./Navigation";
 import "../style/styles.scss";
 import Header from "./Header";
 import Footer from "./Footer";
-import { useState } from "react/cjs/react.development";
 
 const Contact = () => {
 	const [name, setName] = useState("");
